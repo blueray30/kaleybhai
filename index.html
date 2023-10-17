@@ -1,66 +1,257 @@
 <!DOCTYPE html>
-<html lang="JA">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>rkado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <div class="cointainer">
-        <header class="header">
-            <div class="header-logo">
-                <h1 class="logolsd"><img src="assets/image/icon_logo.png" alt="lessisdesign"></h1>
-            
-            <nav class="nav-ul">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ARCHITECTURE</a></li>
-                    <li><a href="">GRAPHIC</a></li>
-                    <li><a href="">NEWS</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="header-logo">
+            <img src="image/logo.png" height="40" width="60">
         </div>
-        </header>
-        <div class="graphic-wrap">
-            <h2>GRAPHIC</h2>
-        </div>
-    </div>
-    <main class="main">
-    <div class="graphic-menu">
-        <ul class="graphic-ul">
-            <li><a href=""><p>ブランディング<span class="eng">BRANDING</span></p></a></li>
-            <li><a href=""><p><span class="eng">WEBSITE</span>ホームページ制作</p></a></li>
-            <li><a href=""><p>映像制作<span class="eng">MOVIE</span></p></a></li>
-            <li><a href=""><p><span class="eng">ARCHITECTURAL<br>PHOTOGRAPH</span>建築写真</p></a></li>
-            <li><a href=""><p><span class="eng">チラシ・広告・カタログ・パンフレット・名刺・ショップカード・封筒・看板など</span>DTP</p></a></li>
-        </ul>
-    </div>
-    </main>
-    <footer class="footer">
-        <section class="footer-wrap">
-        <div class="footer-logo">
-            <h2><img src="assets/image/footer/logo.png" alt="lessisdesign"></h2>
         
-         <div class="social-sns">
-                <a href=""><img src="assets/image/footer/icon_insta.png" alt="insta"></a>
-                <a href=""><img src="assets/image/footer/icon_facebook.png" alt="facebook"></a>
-                <a href=""><img src="assets/image/footer/icon_twitter.png" alt="twitter"></a>
-                <a href=""><img src="assets/image/footer/icon_youtube.png" alt="youtube"></a>
-                <a href=""><img src="assets/image/footer/icon_line.png" alt="line"></a>
-         </div>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchbox">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="search games">
+            </div>
+
         </div>
-        <div class="footer-add">
-        <address class="footer-location">
-            <p>Less is design 株式会社<br>〒770-0856<br>徳島県徳島市中洲町３丁目47番1</p>
-						<a href=""><p>お問い合わせ</p></a>
-        </address>
+        <div class="togglemenu" onclick="togglemenu();"></div>
+    </header>
+
+    <!--Home banner-->
+    <div class="banner animeX" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>Welcome to <br>  
+                      Rkado</h2>
+                <p>A place where to meet new friends, to chat, to share virtual gifts, to play. <br> It just takes own app to enjoy many ways of having friends, freedom and fun! <br></p>
+                <a href="#" class="btn">join now</a>
+            </div>
+            <img src="image/hy.png" height="500px" width="400px" alt="">
+        </div>
     </div>
-</section>
+    <!--Games-->
+    <div class="games animeX" id="games">
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list active" data-filter="mobile">Lowcard Games</li>
+            <li class="list active" data-filter="mobile">Jackpot Games</li>
+            <li class="list active" data-filter="mobile">Cricket Games</li>
+        </ul>
+        <div class="cardbx">
+            <div class="card" data-items="mobile">
+                <img src="image/10.jpg" >
+                <div class="content">
+                    <h4>Low Card</h4>
+                    <div class="progess-line"> <span></span></div>
+                    <div class="info">
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" data-items="mobile">
+                <img src="image/10.jpg" >
+                <div class="content">
+                    <h4>Cricket</h4>
+                    <div class="progess-line"> <span></span></div>
+                    <div class="info">
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" data-items="mobile">
+                <img src="image/10.jpg" >
+                <div class="content">
+                    <h4>Jackpot</h4>
+                    <div class="progess-line"> <span></span></div>
+                    <div class="info">
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" data-items="mobile">
+                <img src="image/10.jpg" >
+                <div class="content">
+                    <h4>Teen-Patti</h4>
+                    <div class="progess-line"> <span></span></div>
+                    <div class="info">
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card" data-items="mobile">
+                <img src="image/10.jpg" >
+                <div class="content">
+                    <h4>card</h4>
+                    <div class="progess-line"> <span></span></div>
+                    <div class="info">
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Events-->
+    <div class="events animeX" id="events">
+        <h2>Live Events</h2>
+        <div class="boxbx">
+            <div class="box">
+                <img src="image/4.jpg" alt="">
+                <div class="content">
+                <h4><span>100</span>Matches is in Process....</h4>
+                <p>udshfdshfdsfiusdhhf</p>
+                <div class="btn">
+                    <a href="#" class="watch">Watch Here</a>
+                    <a href="#" class="join">Join Now</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+    <div class="about animeX" id="about">
+        <div class="contentbx">
+            <span class="topline">Hello</span>
+            <h2>Let's connect by <span class="multiText"></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, blanditiis. Fugiat ipsa tempore eaque, perspiciatis, tempora laborum quod doloribus delectus modi dolores esse, architecto ducimus consequuntur? Harum nostrum beatae ea.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="imgbox">
+            <img src="image/dizzy.png"  id="splash">
+        </div>
+    </div>
+
+<!--Contact-->
+
+<div class="contact animeX" id="contact">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.55847935717!2d83.97369062204693!3d28.22072398370766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595dfa0055f75%3A0x49d86cc6c7aa5ea5!2sB%26S%20Suppliers!5e0!3m2!1sja!2sjp!4v1697517698718!5m2!1sja!2sjp"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+     <div class="form">
+        <h1>Contact Us</h1>
+        <div class="inputbx">
+            <p>Enter Name</p>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputbx">
+            <p>Enter Email</p>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputbx">
+            <p>Message</p>
+            <textarea placeholder="Type here......"></textarea>
+        </div>
+        <div class="inputbx">
+            <input type="submit" name="Submit">
+        </div>
+        
+    </div>
+</div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="info">
+            <!-- <a href="#" class="logo">Gammers</a> -->
+            <p><box-icon type='solid' name='copyright'></box-icon>2022 All Rights Reserved</p>
+            <ul class="sns">
+                <li><a href="#"><i class='bx bxl-facebook-square' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-tiktok' ></i></a></li>
+            </ul>
+
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        var typingEffect = new Typed(".multiText", {
+            strings : ["Playing","Chatting","Blogging","Posting"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+        /*sticky nav bar */
+        window.addEventListener ('scroll', function(){
+            var header = document.querySelector('header')
+            header.classList.toggle('sticky',window.scrollY > 0);
+        })
+
+        /* Responsive Navbar */
+
+        function togglemenu(){
+            const togglemenu = document.querySelector('.togglemenu');
+            const nav = document.querySelector('.nav');
+            togglemenu.classList.toggle('active')
+            nav.classList.toggle('active')   
+        }
+
+        /* scrolling Animation Effects */
+        window.addEventListener('scroll',function(){
+            var anime = document.querySelectorAll('.animeX');
+            for(var s= 0; s < anime.length;s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+                if(animetop < windowheight -animepoint){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active');
+                }
+            }
+
+        })
+
+        /* filterable Cards */
+        
+        let list= document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for(let i=0; i<list.length; i++){
+            list[i].addEventListener('click',function(){
+                for(let j=0;j<list.length;j++){
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                let dataFilter= this.getAttribute('data-filter');
+
+                for(let k=0;k<card.length;k++)
+                {
+                    card[k].cardlist.remove('active');
+                    card[k].cardlist.add('hide');
+
+                    if(card[k].getAttribute('data-items')== dataFilter|| dataFilter == 'all'){
+                        card[k].cardlist.remove('hide');
+                        card[k].cardlist.add('active');
+                    }
+                    
+                }
+            })
+        }
+    </script>
 </body>
 </html>
